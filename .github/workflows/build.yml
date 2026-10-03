@@ -122,6 +122,25 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-hugo-resources-
 
+    # Compile the CV from cv/format_1.tex so the "Download CV" button always serves the latest version
+    - name: Setup Tectonic
+      uses: wtfjoke/setup-tectonic@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - uses: actions/cache@v5
+      with:
+        path: ~/.cache/Tectonic
+        key: ${{ runner.os }}-tectonic-${{ hashFiles('cv/**/*.tex', 'cv/**/*.cls') }}
+        restore-keys: |
+          ${{ runner.os }}-tectonic-
+
+    - name: Compile CV
+      run: |
+        tectonic -X compile cv/format_1.tex --outdir cv
+        mkdir -p static/uploads
+        cp cv/format_1.pdf static/uploads/resume.pdf
+
     - name: Setup Pages
       id: pages
       uses: actions/configure-pages@v5

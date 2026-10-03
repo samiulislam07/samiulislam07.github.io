@@ -67,3 +67,6 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+# Locally compiled CV (CI compiles it into static/uploads/resume.pdf)
+cv/*.pdf

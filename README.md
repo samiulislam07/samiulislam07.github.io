@@ -27,13 +27,15 @@ pnpm build        # production build into public/
 
 ## Updating the CV PDF
 
-`cv/format_1.tex` has a `\publictrue` switch that hides the phone number and street address for the website copy. Switch it to `\publicfalse` for the full version you send directly.
+The deploy workflow compiles `cv/format_1.tex` with Tectonic and publishes it as `uploads/resume.pdf`, so the **Download CV** button always matches the `.tex` in the repo. To update the CV after editing it in Overleaf:
 
-```sh
-cd cv
-tectonic format_1.tex             # or pdflatex / Overleaf
-cp format_1.pdf ../static/uploads/resume.pdf
-```
+1. Copy the full source from Overleaf.
+2. On GitHub, open `cv/format_1.tex` and click the pencil icon. Paste the source and commit to `main`.
+3. Wait 1–2 minutes for the site to redeploy.
+
+`cv/format_1.tex` has a `\publictrue` switch that hides the phone number and street address on the website copy. Keep it set to `\publictrue` in the repo, and use `\publicfalse` in Overleaf for the full version you send directly.
+
+The committed `static/uploads/resume.pdf` is only a fallback for local previews.
 
 `cv/resume.cls` is Trey Hunner's resume class with one change: the header prints in `\AfterEndPreamble` so that `\href` works inside `\address`.
 
