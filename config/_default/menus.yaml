@@ -1,0 +1,19 @@
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: Bio
+    url: /
+    weight: 10
+  - name: Research
+    url: /#research
+    weight: 11
+  - name: Experience
+    url: experience/
+    weight: 20
+  - name: Projects
+    url: projects/
+    weight: 30
+  - name: CV
+    url: uploads/resume.pdf
+    weight: 40

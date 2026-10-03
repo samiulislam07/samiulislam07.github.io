@@ -1,0 +1,139 @@
+\documentclass{resume}
+
+\usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{navyblue}{RGB}{10,30,80}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=navyblue,
+    urlcolor=navyblue,
+}
+
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+
+%----------------------------------------------------------------------------------------
+% HEADER
+%----------------------------------------------------------------------------------------
+\name{S M Samiul Islam}
+
+% Public version (website PDF) hides phone and street address.
+% Change to \publicfalse for the full version sent directly to recruiters.
+\newif\ifpublic
+\publictrue
+
+\ifpublic\else
+\address{
+    \faMapMarker* \ 17/A Shantibagh, Dhaka, Bangladesh \quad
+    \faPhone \ +880 1534-594026
+}
+\fi
+
+\address{
+    \href{mailto:samiulsaminofficial@gmail.com}{\faEnvelope\ samiulsaminofficial@gmail.com} \quad
+    \href{https://www.linkedin.com/in/samiulsamin/}{\faLinkedin\ LinkedIn} \quad
+    \href{https://github.com/samiulislam07}{\faGithub\ GitHub}
+}
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% OBJECTIVE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{OBJECTIVE}
+
+CSE undergraduate at North South University (CGPA 3.99) specializing in AI, Deep Learning, and Computer Vision, with experience in PyTorch and optimizing exact graph algorithms in C++. Seeking research assistantships in machine learning and computer vision.
+
+% Motivated and academically outstanding Computer Science student at North South University, with hands-on experience in teaching, tutoring, and advanced coursework in AI and systems design. Passionate about supporting peers in their academic journey through structured guidance and collaborative learning. Seeking a Undergraduate Assistant (UGA) position to contribute effectively in teaching, grading, and academic coordination.
+
+% Senior year Computer Science student at North South University specializing in full-stack web development using Next.js, MongoDB, and RESTful APIs. Experienced in building production-ready applications with AI-assisted features. Seeking software engineering internships or junior roles to contribute to scalable, real-world systems.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EDUCATION}
+
+{\bf North South University} \hfill Dhaka, Bangladesh \\
+Bachelor of Science in Computer Science and Engineering \hfill Sep 2022 -- Present \\
+CGPA: 3.99 \hfill Completed 110+ Credit Hours \\
+Specializing in Artificial Intelligence, Deep Learning, and Computer Vision
+
+{\bf Faujdarhat Cadet College} \hfill Chittagong, Bangladesh \\
+Higher Secondary Certificate (Science) \hfill 2015 -- 2021 \\
+GPA: 5.00
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{5ex}} l }
+Languages & JavaScript, Python, C++ \\
+Frameworks \& Tools & PyTorch, Next.js, React, Node.js, GIT, REST APIs \\
+Databases & MongoDB, MySQL \\
+Academic strengths & Machine Learning, Full-Stack Development \\
+% Concepts & Full-Stack Development, API Design, MVC Architecture, RBAC \\
+Soft Skills & Communication, Time Management, Leadership, Team Coordination\\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Senior Instructor} \hfill Oct 2022 -- Feb 2024 \\
+Phoenix Education \hfill \textit{Dhaka, Bangladesh (Remote)}
+
+\begin{itemize}
+    \itemsep -3pt
+    \item Mentored 100+ students in competitive admission preparation, improving analytical thinking and academic performance, designed and delivered structured educational content in collaboration with academic and support teams. 
+    \item Led tutorial sessions and supported individual learners, significantly improving comprehension and performance
+    \item Gained experience in assessment, feedback, and performance tracking
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+\vspace{-0.4em}
+
+\item \textbf{\href{https://github.com/samiulislam07/DensePCE}{DensePCE: Exact Pseudo-Clique Enumeration Optimization}} \\
+Optimized an exact pseudo-clique enumeration framework in C++ by integrating FPCE pruning strategies and implementation level improvements. Implemented CSR-based graph storage, intrusive bucket-based degree maintenance, and Tur\'an-based clique seeding via EBBkC to reduce recursion overhead and accelerate enumeration on large real-world graphs.
+
+\item \textbf{\href{https://markflow-6o3q.onrender.com/}{MarkFlow — Collaborative Markdown Editor with AI}} \\
+Built a real-time collaborative web application using Next.js and MongoDB. Implemented AI-assisted content drafting, live Markdown preview, and role-based access control (RBAC). Focused on scalability, real-time updates, and clean system architecture.
+
+% \item \textbf{\href{https://github.com/samiulislam07/Hospital-Patient-Management-System_CSE311}{Hospital-Patient Management System}} \\
+% Developed a full-stack hospital management system using PHP and MySQL. Implemented secure patient records, staff management, and billing workflows with emphasis on data integrity and access control.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{CERTIFICATIONS \& ACHIEVEMENTS}
+
+\begin{itemize}
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/ZV62C25ALJR9}{Machine Learning Specialization}} — DeepLearning.AI \hfill September 2025
+    \item \textbf{\href{https://www.coursera.org/account/accomplishments/verify/B2LBV7SGR2JT}{Python Basics}} — University of Michigan \hfill April 2024
+    \item \textbf{The Short Course on Data Science} — North South University \hfill February 2024
+    %\item \textbf{LeetCode 50 Days Badge 2024} — Top 6.9\% globally for consistency
+\end{itemize}
+
+\end{rSection}
+
+\end{document}

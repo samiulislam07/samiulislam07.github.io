@@ -1,0 +1,100 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: S M Samiul Islam
+  given: Samiul
+  family: Islam
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+role: Computer Science Undergraduate
+bio: |
+  I'm a Computer Science and Engineering undergraduate at North South University
+  (CGPA 3.99), specializing in artificial intelligence, deep learning, and computer
+  vision. I enjoy work that sits between learning systems and efficient algorithms,
+  from training models in PyTorch to optimizing exact graph-enumeration methods in C++.
+
+affiliations:
+  - name: North South University
+    url: https://www.northsouth.edu/
+
+links:
+  - icon: at-symbol
+    url: mailto:samiulsaminofficial@gmail.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/samiulislam07
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/samiulsamin/
+
+interests:
+  - Deep Learning
+  - Computer Vision
+  - Machine Learning
+  - Graph Algorithms
+
+education:
+  - degree: BSc Computer Science and Engineering
+    institution: North South University
+    year: '2022 – Present'
+    start: 2022-09-01
+    summary: |
+      CGPA 3.99 with 110+ credit hours completed. Specializing in Artificial Intelligence,
+      Deep Learning, and Computer Vision.
+  - degree: Higher Secondary Certificate (Science)
+    institution: Faujdarhat Cadet College
+    year: '2015 – 2021'
+    start: '2015'
+    end: '2021'
+    summary: |
+      GPA 5.00.
+
+experience:
+  - role: Senior Instructor
+    org: Phoenix Education
+    start: 2022-10-01
+    end: 2024-02-29
+    summary: |
+      Mentored 100+ students in competitive admission preparation, designing and
+      delivering structured content with the academic team. Led tutorial sessions,
+      supported individual learners, and handled assessment, feedback, and
+      performance tracking. Remote.
+
+skills:
+  - name: Languages
+    items:
+      - label: Python
+      - label: C++
+      - label: JavaScript
+  - name: ML & Data
+    items:
+      - label: PyTorch
+      - label: Machine Learning
+  - name: Web & Systems
+    items:
+      - label: Next.js
+      - label: React
+      - label: Node.js
+      - label: REST APIs
+  - name: Databases & Tools
+    items:
+      - label: MongoDB
+      - label: MySQL
+      - label: Git
+
+awards:
+  - title: Machine Learning Specialization
+    awarder: DeepLearning.AI (Coursera)
+    date: "2025-09-01"
+    url: https://www.coursera.org/account/accomplishments/specialization/ZV62C25ALJR9
+    icon: hero/academic-cap
+  - title: Python Basics
+    awarder: University of Michigan (Coursera)
+    date: "2024-04-01"
+    url: https://www.coursera.org/account/accomplishments/verify/B2LBV7SGR2JT
+    icon: hero/academic-cap
+  - title: The Short Course on Data Science
+    awarder: North South University
+    date: "2024-02-01"
+    icon: hero/academic-cap
