@@ -43,6 +43,8 @@ The committed `static/uploads/resume.pdf` is only a fallback for local previews.
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages. In the repo settings, set **Pages → Source** to **GitHub Actions**.
 
-## Local template fix
+## Local template overrides
+
+`layouts/_partials/components/headers/navbar.html` is a copy of the module's navbar with one change: menu links to `.pdf` files open in a new tab, so the navbar CV link does.
 
 `layouts/_partials/functions/build_links.html` overrides the blox module's partial. The upstream version seeds a scratch map with `(dict)`, which hits a nil map under Hugo 0.162 and breaks any page with `links:`. Delete the override once upstream fixes it.
